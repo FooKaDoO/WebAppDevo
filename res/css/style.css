@@ -33,11 +33,11 @@ section {
     text-align: center;
     margin: 5% auto auto auto;
     padding: 1em;
-    width: 20em;
+    width: 30vw;
     background-color: #4baaea;
     border-radius: 5px;
     display: block;
-        /* 
+        /* r
             display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
         */
 }
@@ -45,9 +45,17 @@ header {
     padding:0.5em;
     border: 1px solid #646174;
     background-color: #4baaea;
-    box-shadow: 0px 0px 1em 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 1vw 0px rgba(0, 0, 0, 0.75);
     position:sticky;
-    margin: 0.1%;
+    width: 98vw;
+    border-radius: 5px;
+}
+footer {
+    padding:0.5em;
+    border: 1px solid #646174;
+    background-color: #4baaea;
+    box-shadow: 0px 0px 1vw 0px rgba(0, 0, 0, 0.75);
+    position:sticky;
     width: 98vw;
     border-radius: 5px;
 }
@@ -60,18 +68,102 @@ header {
     display: block;
     color:black;
 }
+.nav a:hover{
+    transition-duration: 200ms;
+    background-color: #3492d5;
+}
 .nav a:not(.first-child){
     border-left: 1px solid #000000;
 }
 
+.leftbar{
+    position: sticky;
+    width: 15vw;
+    margin: 1%;
+    background-color: #4baaea;
+    border-radius: 5px;
+}
+.rightbar{
+    position: sticky;
+    margin:1%;
+    width: 15vw;
+    background-color: #4baaea;
+    border-radius: 5px;
+}
+.posts{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    position: relative;
+    justify-content: center;
+}
+.posts ul {
+    flex-direction: column;
+}
+.posts li {
+    margin-top: 1vh;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 1% 1% 1%;
+    background-color: #a3b5c8;
+}
+.comment {
+    flex-direction: column;
+}
+.comment img  {
+    width: 100%;
+}
+.profile {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile img {
+    width: 2em;
+    height: 2em;
+}
+
+
 @media (min-width:1px) {
+    body,
     header,
+    footer,
+    .middle,
+    .leftbar,
+    .rightbar,
+    .posts,
+    .profile,
+    .comment,
+    .nav,
     .nav {
         display: flex;
+    }
+    body {
+        flex-direction: column;
+        justify-content: center;
     }
     header {
         flex-direction: row;
         justify-content: space-between;
+    }
+    .middle{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .leftbar{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .rightbar{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .posts{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: center;
     }
     
 }
