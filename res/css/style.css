@@ -41,7 +41,7 @@ section {
             display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
         */
 }
-.header {
+header {
     padding:0.5em;
     border: 1px solid #646174;
     background-color: #4baaea;
@@ -65,11 +65,11 @@ section {
 }
 
 @media (min-width:1px) {
-    .header,
+    header,
     .nav {
         display: flex;
     }
-    .header {
+    header {
         flex-direction: row;
         justify-content: space-between;
     }
