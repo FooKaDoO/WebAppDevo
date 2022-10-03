@@ -20,6 +20,10 @@ a {
      */
     }
 
+p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
 .logo {
     margin: 0;
 }
@@ -37,9 +41,6 @@ section {
     background-color: #4baaea;
     border-radius: 5px;
     display: block;
-        /* r
-            display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
-        */
 }
 header {
     padding:0.5em;
@@ -122,6 +123,9 @@ footer {
     height: 2em;
 }
 
+.inForm{
+    color: gold;
+}
 
 @media (min-width:1px) {
     body,
